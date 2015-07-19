@@ -1,0 +1,77 @@
+// Manual floating for things such as headers
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+
+// Push content down by adding a margin
+.push-down{
+	margin-bottom:50px !important;
+}
+.big-push-down{
+	margin-bottom:75px !important;
+}
+.nudge-down{
+	margin-bottom:25px !important;
+}
+
+// Clearfix utility to be included in .grid, also available as a class.
+.clearfix{
+	&:before, &:after{
+		content:" ";
+		display:table;
+	}
+	&:after{
+		clear:both;
+	}
+}
+
+// The container, a responsive
+.container{
+
+	box-sizing:border-box;
+
+	width:98%;
+	max-width:1000px;
+	margin:0 auto;
+
+	transition: max-width 0.2s;
+
+	// On small monitors...
+	.respond-small({
+		max-width: 700px;
+	});
+
+	// On phones...
+	.respond-phone({
+		padding:0.2rem;
+	});
+}
+
+// Hidden on classes
+.hide-desktop{
+	.respond-desktop({
+		display:none;
+		visibility:hidden;
+	});
+}
+.hide-small{
+	.respond-small({
+		display:none;
+		visibility:hidden;
+	});
+}
+.hide-tablet{
+	.respond-tablet({
+		display:none;
+		visibility:hidden;
+	});
+}
+.hide-phone{
+	.respond-phone({
+		display:none;
+		visibility:hidden;
+	});
+}
