@@ -1,21 +1,26 @@
 # Usage
 
-Simply `git clone gh:JonsnowBD/webpack-starter yourappname` to make your app, then `npm install` all dependencies.
-You need webpack installed globally to be able to use any webpack based technology. To install webpack globally,
-use `npm install -g webpack` and you're set.
+Simply `git clone gh:JonsnowBD/webpack-starter yourappname` to make your app,
+then `npm install` all dependencies.
 
-To build your app minified, simply run `npm build`
+To develop on your new platform, simply run `npm run dev` and it will open
+a server at the port 8080.
+
+To build your app minified, simply run `npm run build`
 
 ## Technology out of the box
 
 Out of the box you will get:
 
 * [Jquery](https://jquery.com/)
-* [The Mililgram CSS Framework](https://milligram.github.io/)
+* [The Milligram CSS Framework](https://milligram.github.io/)
 * [Lodash](https://lodash.com/)
 
-All ready to go.
+All ready to go at a low 163kb for the whole shebang.
 
 ## Structure
 
-You'll want to focus development in `app/webpack/webpack.js` and `app/webpack/componants`.
+All the folders in `./app/webpack` form your application. They are required from
+`./app/webpack/webpack.js` and automatically put into the index.html, no need to
+add <scripts> or <links>, just `require("yourthing.css")` or `require("./framework/controller/ng-thing.js")`. It's very easy to jump in and get
+work done.
