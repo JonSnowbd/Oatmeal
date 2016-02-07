@@ -1,20 +1,15 @@
+'use strict';
 // Libraries
-var Vue = require("./lib/vue.js");
-require("./lib/jquery.js");
-require("./lib/espalier/main.less");
+require("milligram");
+var $ = require("jquery");
+var _ = require("lodash");
 
-// Data model
-var StarterData = {
-	title: "WebPack-Starter"
-};
+// Global-ify Jquery and Lodash Hack-around
+window.$ = $;
+window.jQuery = $;
 
-// Componants
-var headerModule = require("./componant/header.vue");
-headerModule.data = StarterData;
+window._ = _;
 
-var appModule = require("./componant/app.vue");
-appModule.data = StarterData;
-
-// Rest of the application, go wild.
-var header = new Vue(headerModule).$mount("#header");
-var app = new Vue(appModule).$mount("#app");
+// App Bits!
+require("./style/app.less");
+require("./script/app.js");

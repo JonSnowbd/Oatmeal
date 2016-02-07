@@ -8,7 +8,12 @@ module.exports = {
 		loaders: [
 			{test: /\.css$/, loader: "style!css"},
 			{test: /\.less$/, loader:"style!css!less"},
-			{test: /\.vue$/, loader: "vue-loader"}
+         {test: /\.scss$/, loader:"style!css!sass"},
+         {
+            test: /\.js$/,
+            exclude: /(node_modules|bower_components)/,
+            loader:"babel?presets[]=es2015"
+         },
 		]
 	}
 }
