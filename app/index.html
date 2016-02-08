@@ -3,40 +3,87 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Webpack Starter</title>
-
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+		<title>Oatmeal Site Starter</title>
 	</head>
 	<body>
 
+      <div class="container collapse" id="collapse-menu">
+         <a href="https://github.com/JonSnowbd/Oatmeal">Github</a>
+      </div>
+
+      <nav class="navbar navbar-light bg-faded m-b-2">
+         <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-menu">
+               &#9776;
+            </button>
+            <a href="#" class="navbar-brand">Oatmeal</a>
+         </div>
+      </nav>
+
 		<div class="container">
-		   <div class="row">
+         <h1>Welcome!</h1>
+         <p>
+            You have everything you need to start developing the next
+            big thing on the web. Packed in this neat little site is:
+         </p>
+         <!-- <ul>
+            <li><a href="https://jquery.com/">Jquery</a></li>
+            <li><a href="http://v4-alpha.getbootstrap.com/getting-started/introduction/#important-globals">Bootstrap</a></li>
+            <li><a href="https://lodash.com/">Lodash</a></li>
+         </ul> -->
+         <div class="m-b-1 card-deck-wrapper">
+            <div class="card-deck">
+               <div class="card">
+                  <div class="card-header">
+                     <h3>Lodash</h3>
+                  </div>
+                  <div class="card-block">
+                     <p class="card-text">
+                        A simple and easy to use library FULL of incredibly useful
+                        bits and bobs that you can use for any purpose.
+                     </p>
+                     <a href="https://lodash.com/docs" class="btn btn-primary">Docs</a>
+                  </div>
+               </div>
 
-		      <div class="column column-25">
-		         <h4>Webpack Starter</h4>
-               <a href="https://github.com/JonSnowbd/webpack-starter" class="button">Github</a>
-		      </div>
+               <div class="card">
+                  <div class="card-header">
+                     <h3>Bootstrap 4.0</h3>
+                  </div>
+                  <div class="card-block">
+                     <p class="card-text">
+                        Great and simple CSS framework that will get you going without needing
+                        to write a whole bunch of layout styles.
+                     </p>
+                     <a href="http://v4-alpha.getbootstrap.com/getting-started/introduction/" class="btn btn-primary">Docs</a>
+                  </div>
+               </div>
 
-            <div class="column column-75">
-               <h1>Welcome!</h1>
-               <p>
-                  You have everything you need to start developing the next
-                  big thing on the web. Packed in this neat little package is:
-               </p>
-               <ul>
-                  <li><a href="https://jquery.com/">Jquery</a></li>
-                  <li><a href="https://milligram.github.io/#getting-started">Milligram</a></li>
-                  <li><a href="https://lodash.com/">Lodash</a></li>
-               </ul>
-               <p>
-                  Have fun building and be sure to remember to minify your builds
-                  with <pre><code>npm run build</code></pre> in the same directory
-                  as the package.json.
-               </p>
+               <div class="card">
+                  <div class="card-header">
+                     <h3>Jquery</h3>
+                  </div>
+                  <div class="card-block">
+                     <p class="card-text">
+                        An all purpose DOM manipulation tool. It's the swiss army knife
+                        of Javascript.
+                     </p>
+                     <a href="http://api.jquery.com/" class="btn btn-primary">Docs</a>
+                  </div>
+               </div>
             </div>
+         </div>
 
-		   </div>
-		</div>
+         <p>
+            Have fun building and be sure to remember to minify your builds
+            with <pre><code>npm run build</code></pre> in the same directory
+            as the package.json.
+         </p>
+         <p>
+            Oh, and <pre><code>npm run dev</code></pre> to run the development server if you havent already.
+            the server opens <a href="localhost:8080/">here</a>.
+         </p>
+      </div>
 
 		<script src="build.js"></script>
 	</body>

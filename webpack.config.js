@@ -2,7 +2,7 @@ var autoprefixer = require("autoprefixer");
 var precss       = require("precss");
 
 module.exports = {
-	entry: "./app/webpack/webpack.js",
+	entry: "./app/src/webpack.js",
 	output: {
 		path: "./app",
 		filename: "build.js"
